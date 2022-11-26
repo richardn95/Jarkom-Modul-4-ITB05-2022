@@ -14,7 +14,9 @@ Kelompok ITB05
 
 # Topologi
 Berikut ini adalah topologi dari soal yang akan kami buat di **Cicso Packet Tracer** dan **GNS3**
+
 ![topologi](img/topologi.png)
+
 # VLSM
 Untuk topologi VLSM, kami menggunakan **Cisco Packet Tracer** dalam pembuatan topologi
 Berikut ini adalah topologi pada Cicso Packet Tracer
@@ -27,10 +29,13 @@ Berikut ini adalah subnetting VLSM tree yang kami buat
 ![tree](img/vlsm_tree.png)
 
 Step pengerjaan:
+
 Pada setiap node, kami mengatur **IP address**, **subnet mask**, dan **default gateway** (IP address dan subnet mask diatur berdasarkan tabel VLSM, default gateway adalah IP dari router yang terhubung dengan node)
 
 Contoh salah satu pengaturan adalah pada Guideau yang memiliki 1000 host (A1)
+
 ![cpt1](img/cpt1.png)
+
 Setelah itu, diatur pada router IP address untuk semua jalur yang terhubung dengan router tersebut (A1 menggunakan FastEthernet0/0)
 
 ![cpt2](img/cpt2.png)
@@ -46,8 +51,10 @@ Setelah itu, diatur pada router IP address untuk semua jalur yang terhubung deng
 Setelah FastEthernet diatur, maka pada bagian **ROUTING** > **Static** diatur Network, Mask, dan Next Hop 
 
 Untuk memudahkan pengerjaan, kami menggaunakan **0.0.0.0** pada **network** dan **mask**, dan untuk **Next hop** digunakan **ip router yang terhubung**. Contohnya pada **The Dauntless** terhubung dengan IP **The Minister** (IP Router)
+
 ![cpt3](img/cpt3.png)
 
+Setiap Node adan Router telah kami atur dengan cara seperti diatas. Pada akhirnya, antara node dan router bisa saling nge-*ping*
 
 ## Revisi VLSM
 ping dari The Dauntless ke The Profound
@@ -64,19 +71,29 @@ ping dari Guideau ke The Firefist (masih tidak bisa)
 
 # CIDR
 Berikut ini adalah topologi pada GNS3
+
 ![topologi](img/topologi_cidr.png)
 
 Berikut ini adalah tabel subnetting CIDR yang kami lakukan
+
 ![tabel](img/tabel_cidr.png)
 
 Step subnetting CIDR
+
 ![step1](img/CIDR1.png)
+
 ![step2](img/CIDR2.png)
+
 ![step3](img/CIDR3.png)
+
 ![step4](img/CIDR4.png)
+
 ![step5](img/CIDR5.png)
+
 ![step6](img/CIDR6.png)
+
 ![step7](img/CIDR7.png)
+
 ![step8](img/CIDR8.png)
 
 Berikut ini adalah subnetting CIDR tree yang kami buat
